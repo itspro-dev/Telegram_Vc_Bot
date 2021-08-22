@@ -533,7 +533,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** Here The Song Requested By {}".format(
+        caption="▶️ **Playing** Here The Song Requested By {} Join @animefansclubchat  ".format(
         message.from_user.mention()
         ),
     )
