@@ -10,15 +10,10 @@ async def start(_, message: Message):
         text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("➕️ ADD ME TO YOUR GROUP 🐣", url=f"https://t.me/@pro_musicc_bot?startgroup=true"")
+            InlineKeyboardButton("➕️ ADD ME TO YOUR GROUP 🐣", url=f"https://t.me/@pro_musicc_bot?startgroup=true")
             ],[
-            InlineKeyboardButton( "📮 UPDATE CHANNEL", url=f"https://t.me/animefansclubchat "),
-             ],[
-            InlineKeyboardButton("🌟SUPPORT🌟", url=f"https://t.me/animefansclubchat ")
-            ],[
-                 InlineKeyboardButton( "🌟ANIME FANS CLUB🌟", url=f"https://t.me/animefansclubchat")
-            ],[
-                 InlineKeyboardButton("🌟FRIENDSHIP GROUP🌟", url=f"https://t.me/friendship_chatting")
+            InlineKeyboardButton("🌟SUPPORT🌟", url=f"https://t.me/animefansclubchat"),
+            InlineKeyboardButton("🌟FRIENDSHIP GROUP🌟", url=f"https://t.me/friendship_chatting")
             ],[
             InlineKeyboardButton("Commands 🛠", url="https://telegra.ph/ProMusicbot-08-22")
             ]]
@@ -38,10 +33,10 @@ async def gstart(_, message: Message):
     )
 
 
-@Client.on_message(filters.command(["cmdlist", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["cmdlist", "start@pro_musicc_bot"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
-        text="""**Pro Music Bot : Help Menu**
+        text="""**Group Music Bot : Help Menu**
 
 __× First Add Me To Your Group..
 × Promote Me As Admin In Your Group With All Permission..__
